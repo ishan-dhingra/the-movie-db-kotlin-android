@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">The Movie DB</string>
+    <string name="txt_went_wrong">Something went wrong!</string>
+    <string name="btn_try_again">Try Again</string>
+    <string name="msg_unable_to_load">Unable to load more!</string>
+</resources>
