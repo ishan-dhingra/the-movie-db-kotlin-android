@@ -18,7 +18,6 @@ import javax.inject.Inject
 class MovieRepositoryImpl @Inject constructor(var movieAPI: MovieAPI) : MovieRepository {
 
     override fun getMovies(page: Int, date: Date): Observable<MovieResponse> {
-        Log.d("date", date.toReleaseFormat())
         return movieAPI.discover(page = page, date = date.toReleaseFormat())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

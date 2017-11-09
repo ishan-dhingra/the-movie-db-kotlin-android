@@ -57,7 +57,7 @@ class MovieListViewModel @Inject constructor(val repository: MovieRepository, va
         t.printStackTrace()
         showLoading.set(false)
         if (movies.size == 0) {
-            showError.equals(true)
+            showError.set(true)
         } else {
             toaster.showLong(R.string.msg_unable_to_load)
         }
